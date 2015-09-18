@@ -1,0 +1,11 @@
+(defun primo (n div) 
+( cond ((= n 1) T)
+       ((= div 1) T)
+       ((= (mod n div) 0) NIL)
+       (t (primo n (- div 1)))
+))
+
+(defun is_prime (n) 
+(cond ((primo n (- n 1)) (list 'Es-primo))
+       (t (list 'no-es-primo))
+))

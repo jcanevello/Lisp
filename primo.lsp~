@@ -1,0 +1,5 @@
+(defun primo (n div) 
+( cond ((= div 1) 1)
+       ((= (mod n div) 0) 0)
+       (t (primo n (- div 1)))
+))

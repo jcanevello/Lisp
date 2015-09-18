@@ -1,0 +1,4 @@
+(defun suma_serie_1 (n)
+( cond ((= n 0) 0)
+       ()
+))
