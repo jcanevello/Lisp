@@ -1,7 +1,0 @@
-(defun sumapar (list)
-( cond ((null list) 0 )
-       (t (
-           
-           ))
-)
-)

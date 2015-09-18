@@ -1,7 +1,0 @@
-(defun sph (l)
-( if (null (car l)) 0 
- (if(atom (car l))
-   (+ (car l) (shp (cdr l)))
-   (sph (cdr l))
- )
-))
