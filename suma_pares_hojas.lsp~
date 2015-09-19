@@ -1,8 +1,8 @@
 (defun sph (l)
 ( if (null (car l)) 0 
  (if(atom (car l))
-   (if (is_prime (first l))
-     (cons (car l) (sph (cdr l)))
+   (if (= (mod (car l) 2) 0)
+     ((+ (car l) (sph (cdr l))))
      (sph (cdr l))
      )
    (sph (cdr l))

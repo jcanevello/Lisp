@@ -10,7 +10,12 @@
 ))
 
 (setq l '(1 2 3 (3 4 (5 6)) 7 8 (9 10 (11 12 13 14))))
-(setq l2 '(1 2 3 4 5 6 7 8 9 10))
+
+(defun aplanar (l)
+( cond ((null (first l)) NIL)
+       ((atom (first l)) (cons (first l) (aplanar (rest l))) )
+       (t (append (aplanar (first l)) (aplanar (rest l))))
+))  
 
 ;Funciona para listas simples
 (defun get-primos (l)
